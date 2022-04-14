@@ -1,0 +1,16 @@
+.button {
+  display: flex;
+  background-color: $btn-basic-color;
+  min-height: 50px;
+  width: 288px;
+  margin: 0 auto;
+
+  &:hover,
+  &:focus {
+    background-color: $btn-hover-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+  }
+}

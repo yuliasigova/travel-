@@ -1,0 +1,64 @@
+.places {
+  margin-top: 200px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0 76px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.places__title {
+  padding-top: 80px;
+  margin: 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+
+.places__text {
+  color: $color-main--dark-70;
+  text-align: center;
+  letter-spacing: -0.7px;
+  @media (min-width: $tablet-width) {
+    width: 340px;
+    height: auto;
+    align-self: center;
+    margin: 0;
+    letter-spacing: -0.47px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+
+.places__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-gap: 10px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    grid-row-gap: 14px;
+}
+}
+.places__item {
+
+  &:last-child {
+    @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+    justify-self: center;
+    }
+  }
+}

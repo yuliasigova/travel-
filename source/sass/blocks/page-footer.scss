@@ -1,0 +1,22 @@
+.page-footer {
+  @media (min-width: $tablet-width) {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  }
+}
+
+.page-footer__other-countries {
+  margin-bottom: 30px;
+}
+
+.page-footer__contacts {
+  padding-bottom: 26px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid $color-main-gray;
+}
+
+.page-footer__offer {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+    }
+}

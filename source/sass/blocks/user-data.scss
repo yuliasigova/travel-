@@ -1,0 +1,21 @@
+.user-data {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+}
+
+
+.user-data__label {
+  font-size: 16px;
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 20px;
+}
+
+.user-data__input {
+  padding: 13px 14px;
+  display: flex;
+  flex-grow: 1;
+}
