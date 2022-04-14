@@ -1,0 +1,26 @@
+.card-info {
+  margin-top: 44px;
+  margin-bottom: 50px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+}
+}
+
+.card-info__title {
+  margin: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 45px;
+}
+}
+
+.card-info__text {
+  margin: 24px 0 20px 0;
+  letter-spacing: -0.47px;
+  text-align: center;
+  color: $color-main--dark-70;
+}

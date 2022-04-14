@@ -1,0 +1,18 @@
+.page-header {
+  height: 50px;
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    min-height: 100px;
+  }
+}
+
+.page-header__logo {
+  display: block;
+  padding-left: 16px;
+  padding-top:16px;
+  
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+  }
+}

@@ -1,0 +1,98 @@
+.reviews {
+  height: 415px;
+  background: url("../../img/background-mobile.jpg") no-repeat top center ;
+  background-size: cover;
+  margin: 0 -20px;
+  margin-bottom: 115px;
+  display: flex;
+
+  @media (min-resolution: 2dppx) {
+    height: 415px;
+    background: url("../../img/background-mobile@2x.jpg") no-repeat top center;
+    background-size: cover;
+  }
+  @media (min-width: $tablet-width) {
+    background: url("../../img/background-review-tablet.png") no-repeat top center;
+    background-size: cover;
+    height: 415px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/background-review-tablet@2x.png") no-repeat top center;
+      background-size: cover;
+      height: 415px;
+    }
+}
+}
+
+.reviews__wrapper {
+  background-color: $color-main--lighten;
+  width: 268px;
+  height: auto;
+  margin-top: 88px;
+  @media (min-width: $tablet-width) {
+    min-width: 382px;
+    padding: 30px;
+    margin-top: 80px;
+}
+}
+
+.reviews__title {
+  margin: 0;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+}
+
+
+.reviews__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  margin: 0;
+  color: $color-main--dark-70;
+  margin-bottom: 20px;
+  @media (min-width: $tablet-width) {
+  text-align: left;
+  letter-spacing: -0.50px;
+  margin-bottom: 30px;
+}
+}
+
+.reviews__avatar {
+  min-width: 38px;
+  width: 38px;
+  height: 38px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  @media (min-width: $tablet-width) {
+  margin: 0;
+  }
+}
+
+.reviews__user {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  @media (min-width: $tablet-width) {
+    margin-left: 17px;}
+}
+
+.reviews__user-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}

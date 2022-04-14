@@ -1,0 +1,79 @@
+.main-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: $color-main--lighten;
+  position: relative;
+  top: -44px;
+  right:0;
+  padding-top: 134px;
+  max-width: 320px;
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.main-nav__item a {
+  display: block;
+  padding: 17px 0 17px 16px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: $color-menu-dark;
+  background-color: $color-main--light;
+  margin-bottom: 30px;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  background-color: $btn-basic-color;
+  width: 50px;
+  height: 50px;
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle {
+   &::before {
+    content: "";
+
+    position: absolute;
+    width: 24px;
+    height: 1px;
+    background-color: $color-main--lighten;
+    box-shadow: 0 8px 0 0 $color-main--lighten, 0 16px 0 0 $color-main--lighten;
+    top: 15px;
+    right: 11px;
+  }
+}
+
+.main-nav--closed .main-nav__list {
+  display: none;
+}
+
+.main-nav--opened  .main-nav__list {
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: $color-main--darken-20;
+    right: 10px;
+    top: 10px;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}

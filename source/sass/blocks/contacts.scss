@@ -1,0 +1,36 @@
+.contacts {
+  @media (min-width: $tablet-width) {
+    padding-left: 50px;
+}
+}
+
+.contacts__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: $color-main--darken;
+  display: block;
+  text-align: center;
+  margin-bottom: 25px;
+  @media (min-width: $tablet-width) {
+    text-align: left;
+}
+}
+
+.contacts__email {
+  font-size: 14px;
+  line-height: 17px;
+  color: $btn-basic-color;
+  text-align: center;
+  display: block;
+  padding-left: 54px;
+  margin-bottom: 27px;
+}
+
+.contacts__phone {
+  display: block;
+  text-align: center;
+  color: $btn-basic-color;
+  text-decoration-line: underline;
+  padding-left: 42px;
+}
