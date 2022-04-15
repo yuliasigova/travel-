@@ -28,11 +28,13 @@
   background-color: $color-main--lighten;
   width: 268px;
   height: auto;
-  margin-top: 88px;
+  margin-top: 50px;
+  padding: 30px 20px;
+
   @media (min-width: $tablet-width) {
     min-width: 382px;
-    padding: 30px;
     margin-top: 80px;
+    padding: 30px;
 }
 }
 
@@ -42,11 +44,12 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
+  margin-bottom: 30px;
+
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
     text-align: left;
-    margin-bottom: 30px;
 }
 }
 
@@ -60,9 +63,10 @@
   margin: 0;
   color: $color-main--dark-70;
   margin-bottom: 20px;
+  letter-spacing: -0.50px;
+
   @media (min-width: $tablet-width) {
   text-align: left;
-  letter-spacing: -0.50px;
   margin-bottom: 30px;
 }
 }

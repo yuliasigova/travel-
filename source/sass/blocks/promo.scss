@@ -82,21 +82,3 @@
   }
 }
 
-.promo__link {
-  color: $color-main--lighten;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 10px;
-  line-height: 12px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  justify-content: left;
-  align-items: center;
-  padding-left: 38px;
-
-  @media (min-width: $tablet-width) {
-    width: 250px;
-    align-self: center;
-
-    }
-}
